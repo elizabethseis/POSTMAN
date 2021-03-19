@@ -1,0 +1,16 @@
+{
+  "name": "postman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "newman run 'Backend/Collection/TODOIST.postman_collection.json' -e 'Backend/EnvVariables/EnvTODOIST.postman_environment.json' -d 'Backend/EnvVariables/Customer-Data.csv' -r htmlextra --reporter-htmlextra-export 'Backend/Reports'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "newman": "^5.2.2",
+    "newman-reporter-htmlextra": "^1.20.1",
+    "reporter": "^0.1.0"
+  }
+}
